@@ -1,6 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_test/firebase_options.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  final notificationSettings =
+      await FirebaseMessaging.instance.requestPermission();
+
+  final fcmToken = await FirebaseMessaging.instance.getToken();
+
+  print('fcmToken = $fcmToken\r\n');
+
   runApp(const MainApp());
 }
 
@@ -12,7 +28,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Text('Firebase test!'),
         ),
       ),
     );
