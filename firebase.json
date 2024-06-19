@@ -1,1 +1,50 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"fir-test-a1386","appId":"1:648151005969:android:f9614f091b2895bd696ab0","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"fir-test-a1386","appId":"1:648151005969:ios:ad20ff5f3b34f614696ab0","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"fir-test-a1386","appId":"1:648151005969:ios:ad20ff5f3b34f614696ab0","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"fir-test-a1386","configurations":{"android":"1:648151005969:android:f9614f091b2895bd696ab0","ios":"1:648151005969:ios:ad20ff5f3b34f614696ab0","macos":"1:648151005969:ios:ad20ff5f3b34f614696ab0","web":"1:648151005969:web:89fe159e450b4b8b696ab0","windows":"1:648151005969:web:6d324da306dceb66696ab0"}}}}}}
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "fir-test-a1386",
+                    "appId": "1:648151005969:android:f9614f091b2895bd696ab0",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "ios": {
+                "default": {
+                    "projectId": "fir-test-a1386",
+                    "appId": "1:648151005969:ios:ad20ff5f3b34f614696ab0",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "ios/Runner/GoogleService-Info.plist"
+                }
+            },
+            "macos": {
+                "default": {
+                    "projectId": "fir-test-a1386",
+                    "appId": "1:648151005969:ios:ad20ff5f3b34f614696ab0",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "macos/Runner/GoogleService-Info.plist"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "fir-test-a1386",
+                    "configurations": {
+                        "android": "1:648151005969:android:f9614f091b2895bd696ab0",
+                        "ios": "1:648151005969:ios:ad20ff5f3b34f614696ab0",
+                        "macos": "1:648151005969:ios:ad20ff5f3b34f614696ab0",
+                        "web": "1:648151005969:web:89fe159e450b4b8b696ab0",
+                        "windows": "1:648151005969:web:6d324da306dceb66696ab0"
+                    }
+                }
+            }
+        }
+    },
+    "emulators": {
+        "singleProjectMode": true,
+        "auth": {
+            "port": 9099
+        },
+        "ui": {
+            "enabled": true
+        }
+    }
+}

@@ -1,10 +1,14 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+// ignore_for_file: avoid_print
 
-Future<void> setupNotification() async {
-  await FirebaseMessaging.instance.requestPermission();
+part of 'firebase_setup.dart';
 
-  final fcmToken = await FirebaseMessaging.instance.getToken();
+Future<void> _setupNotification() async {
+  FirebaseMessaging.instance.requestPermission();
+
+  final fcmToken = await FirebaseMessaging.instance.getToken(
+    vapidKey:
+        "BM5B74cHBldMOJRPSVmnGvTbvXFepK2Kf8y6-N3qOezT02Fc2MwZd1mF3R3O__7BxSOunBZdkKgwRpK10QKYPH4",
+  );
 
   print('fcmToken = $fcmToken\r\n');
 
